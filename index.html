@@ -5,130 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RickGames</title>
 
-  <style>
-    /* RESET */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-color: #0a0a0a;
-      color: #fff;
-      font-family: Arial, sans-serif;
-    }
-
-    /* MENU */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px;
-      border-bottom: 2px solid red;
-    }
-
-    nav h1 {
-      color: red;
-    }
-
-    nav .menu {
-      display: flex;
-      gap: 20px; /* 🔥 resolve o colado */
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* CONTEÚDO */
-    .container {
-      padding: 20px;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    /* CARDS */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .card h3 {
-      color: red;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      word-break: break-word; /* 🔥 resolve email vazando */
-    }
-
-    /* RESPONSIVO */
-    @media (max-width: 600px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="rickgames-style.css">
 </head>
 
 <body>
 
-  <!-- MENU -->
-  <nav>
-    <h1>RickGames</h1>
+  <header>
+    <a href="index.html" class="logo">
+      <span class="logo-icone">🎮</span>
+      <span class="logo-nome">RickGames</span>
+    </a>
 
-    <div class="menu">
-      <a href="#">INÍCIO</a>
-      <a href="#">SOBRE</a>
-      <a href="#">PRODUTOS</a>
-      <a href="#">CONTATO</a>
+    <nav>
+      <a href="index.html" class="ativo">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <span class="hero-badge">▶ Loja online de jogos</span>
+
+      <h1>Bem-vindo à<br><span>RickGames</span></h1>
+
+      <p>
+        Aqui você encontra os melhores jogos para PC e console, com preço justo e entrega rápida.
+      </p>
+
+      <a href="produtos.html" class="btn">Ver jogos</a>
     </div>
-  </nav>
 
-  <!-- CONTEÚDO -->
-  <div class="container">
-    <h2>Fale com a gente</h2>
+    <h2>Por que a RickGames?</h2>
 
-    <div class="cards">
+    <div class="destaques">
 
-      <div class="card">
-        <h3>E-mail</h3>
-        <p>rickgames@gmail.com</p>
+      <div class="destaque-card">
+        <span class="icone">⚡</span>
+        <h3>Entrega rápida</h3>
+        <p>Chave digital enviada por e-mail em minutos.</p>
       </div>
 
-      <div class="card">
-        <h3>WhatsApp</h3>
-        <p>(11) 99999-0000</p>
+      <div class="destaque-card">
+        <span class="icone">💰</span>
+        <h3>Preço justo</h3>
+        <p>Preços competitivos em todos os títulos.</p>
       </div>
 
-      <div class="card">
-        <h3>Instagram</h3>
-        <p>@rickgames</p>
-      </div>
-
-      <div class="card">
-        <h3>Horário</h3>
-        <p>
-          Segunda a sexta: 9h às 21h<br>
-          Sábado: 10h às 18h
-        </p>
+      <div class="destaque-card">
+        <span class="icone">🎯</span>
+        <h3>Variedade</h3>
+        <p>Jogos de ação, esporte, RPG e muito mais.</p>
       </div>
 
     </div>
-  </div>
+
+  </main>
+
+  <footer>
+    <span class="footer-nome">RickGames — 2025</span>
+
+    <div class="footer-links">
+      <a href="sobre.html">Sobre</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </footer>
 
 </body>
 </html>
