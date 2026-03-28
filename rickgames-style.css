@@ -1,0 +1,361 @@
+/* RickGames - estilo principal */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Barlow:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: #0d0d0d;
+  color: #f0f0f0;
+  line-height: 1.7;
+}
+
+/* cabecalho */
+header {
+  border-bottom: 2px solid #ff3c3c;
+  padding: 18px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111111;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.logo-icone {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.logo-nome {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  color: #ff3c3c;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #ff3c3c;
+}
+
+nav a.ativo {
+  color: #f0f0f0;
+  border-bottom: 2px solid #ff3c3c;
+}
+
+/* conteudo */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+/* hero */
+.hero {
+  padding: 80px 0 60px;
+  border-bottom: 1px solid #2a2a2a;
+  margin-bottom: 60px;
+}
+
+.hero-badge {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.55rem;
+  color: #ff3c3c;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.hero h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.hero h1 span {
+  color: #ff3c3c;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #aaaaaa;
+  max-width: 540px;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 12px 28px;
+  background: #ff3c3c;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 2px solid #ff3c3c;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #ff3c3c;
+}
+
+/* secao titulo */
+h2 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2a2a2a;
+  letter-spacing: 1px;
+}
+
+/* destaques da home */
+.destaques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.destaque-card {
+  border: 1px solid #2a2a2a;
+  padding: 24px 20px;
+  width: calc(33.333% - 12px);
+  background: #161616;
+}
+
+.destaque-card .icone {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.destaque-card h3 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  color: #ff3c3c;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.destaque-card p {
+  font-size: 0.88rem;
+  color: #888888;
+  line-height: 1.7;
+}
+
+/* pagina sobre */
+.sobre-texto {
+  font-size: 1.05rem;
+  color: #cccccc;
+  line-height: 1.9;
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+.valores {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 16px;
+}
+
+.valor-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.valor-item .num {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.65rem;
+  color: #ff3c3c;
+  min-width: 30px;
+  padding-top: 4px;
+}
+
+.valor-item h3 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.valor-item p {
+  font-size: 0.9rem;
+  color: #888888;
+}
+
+/* pagina produtos */
+.grid-jogos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.jogo-card {
+  border: 1px solid #2a2a2a;
+  background: #161616;
+  padding: 0;
+  width: calc(50% - 8px);
+  overflow: hidden;
+}
+
+.jogo-capa {
+  background: #1e1e1e;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.jogo-info {
+  padding: 18px 20px;
+}
+
+.jogo-info h3 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.65rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.jogo-info .genero {
+  font-size: 0.8rem;
+  color: #666666;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.jogo-info .preco {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.75rem;
+  color: #ff3c3c;
+}
+
+/* pagina contato */
+.contato-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.contato-card {
+  border: 1px solid #2a2a2a;
+  background: #161616;
+  padding: 28px 24px;
+  width: calc(50% - 8px);
+}
+
+.contato-card .icone {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.contato-card h3 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  color: #ff3c3c;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.contato-card a,
+.contato-card p {
+  font-size: 0.95rem;
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.contato-card a:hover {
+  color: #ff3c3c;
+}
+
+.aviso {
+  font-size: 0.88rem;
+  color: #555555;
+  border-top: 1px solid #1e1e1e;
+  padding-top: 20px;
+  margin-top: 8px;
+}
+
+/* rodape */
+footer {
+  border-top: 2px solid #1e1e1e;
+  padding: 24px 48px;
+  margin-top: 80px;
+  background: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-nome {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.55rem;
+  color: #444444;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  font-size: 0.82rem;
+  color: #555555;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-links a:hover {
+  color: #ff3c3c;
+}
